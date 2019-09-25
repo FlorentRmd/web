@@ -13,11 +13,32 @@ function start_page($title)
 
 
 <?php
-    echo getenv('REMOTE_ADDR');
-    echo getenv('HTTP_HOST');
-    echo getenv('SERVER_SOFTWARE');
-?>
+//    echo getenv('REMOTE_ADDR');
+//    echo getenv('HTTP_HOST');
+//    echo getenv('SERVER_SOFTWARE');
+//?>
 
+<?php
+function form()
+{
+    echo ' <form method="post" >
+        <input type="text" name="Identifiant"/>    
+        <input type="radio"/>
+        <input type="text" name="e-mail"/>
+        <input type="password"/>
+        <input type="password"/>
+        <select>
+         <option value="France">France</option>
+         <option value="Espagne">Espagne</option>
+         <option value="Allemagne">Allemagne</option>
+         
+         </select>
+        <input type="checkbox"/>
+        <input type="submit" />
+    </form>';
+
+}
+?>
 
 <?php
 function end_page()
