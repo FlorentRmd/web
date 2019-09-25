@@ -25,21 +25,26 @@ function form()
 {
     echo ' <form method="post" action="data-processing.php" >
         <input type="text" placeholder="Identifiant"/><br/>
-        <input type="radio" id="Homme"/>
-            <label for="Homme"> Homme </label>
-        <input type="radio"value="Femme"/>
-            <label for="Femme"> Femme </label>
+
+        <input id="optSexeH" type="radio" name="sexe" value="H"/>
+            <label for="optSexeH"> Homme </label>
+
+        <input id="optSexeF" type="radio" name="sexe" value="F"/>
+            <label for="optSexeF"> Femme </label>
+
         <br/>
         <input type="text" placeholder="e-mail" name="Email"/><br/>
         <input type="password" placeholder="Mot de passe" name="Mdp"/><br/>
-        <select>
+        <select id="Choix" name="Pays">
          <option value="France">France</option>
          <option value="Espagne">Espagne</option>
          <option value="Allemagne">Allemagne</option>         
         </select>
         <input type="checkbox" value="CG"/>
             <label for="CG">Conditions générales</label><br/>
-        <input type="submit" action="mailer" name="action"/>
+        
+        <input type="hidden" name="action" value="mailer">
+        <input type="submit" value="Expédier"/>
     </form>';
 
 }

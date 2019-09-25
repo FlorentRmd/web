@@ -1,3 +1,7 @@
 body{
     background : lightgrey;
 }
+form{
+    text-align: center;
+    margin-top: 20%;
+}
