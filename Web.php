@@ -2,8 +2,11 @@
 include 'utils.inc.php';
 ?>
 <?php
-form();
+    start_page('titre');
 ?>
 <?php
-start_page('titre');
+    form();
+?>
+<?php
+    end_page();
 ?>
