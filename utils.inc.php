@@ -8,15 +8,20 @@ function start_page($title)
 ?>
 
 <?php
-start_page('titre');
+    start_page('titre');
 ?>
+
+
+<?php
+    echo getenv('REMOTE_ADDR');
+    echo getenv('HTTP_HOST');
+    echo getenv('SERVER_SOFTWARE');
+?>
+
+
 <?php
 function end_page()
 {
     echo '</body>' . PHP_EOL .'</html>';
 }
 ?>
-
-<?php
-    include 'utils.inc.php';
-    ?>
