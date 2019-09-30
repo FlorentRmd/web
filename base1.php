@@ -22,3 +22,13 @@ if(!$dbResult = mysqli_query($dbLink, $query))
     exit();
 }
 ?>
+
+<?php
+    while($dbRow = mysqli_fetch_assoc($dbResult))
+    {
+        echo $dbRow['id'] . '<br/>';
+        echo $dbRow['email'] . '<br/>';
+        echo $dbRow['date'] . '<br/>';
+        echo '<br/><br/>';
+
+    }
