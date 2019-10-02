@@ -16,6 +16,10 @@ $message .= 'Mot de passe : ' . PHP_EOL . $password;
     {
         echo $message;
     }
+    elseif ($action == 'rec')
+    {
+        echo  'test';
+    }
     else
     {
         echo '<br/><strong>Bouton non géré !</strong><br/>';
