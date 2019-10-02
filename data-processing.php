@@ -18,7 +18,9 @@ $message .= 'Mot de passe : ' . PHP_EOL . $password;
     }
     elseif ($action == 'rec')
     {
-        echo  'test';
+        $nf = 'nf';
+        $Nf3 = 'Nf3.php';
+        echo '<a href="'.$Nf3.'">'.$nf.'</a>';
     }
     else
     {

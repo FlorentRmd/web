@@ -1,7 +1,6 @@
 
 
 <?php
-include 'utils.inc.php';
 $file = 'data.txt';
 if(!($file = fopen($file, 'r')))
 {
