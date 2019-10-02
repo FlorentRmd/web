@@ -21,34 +21,34 @@ function start_page($title)
 //?>
 
 <?php
-function form()
-{
-    echo ' <form method="post" action="data-processing.php" >
-        <input type="text" placeholder="Identifiant"/><br/>
-
-        <input id="optSexeH" type="radio" name="sexe" value="H"/>
-            <label for="optSexeH"> Homme </label>
-
-        <input id="optSexeF" type="radio" name="sexe" value="F"/>
-            <label for="optSexeF"> Femme </label>
-
-        <br/>
-        <input type="text" placeholder="e-mail" name="Email"/><br/>
-        <input type="password" placeholder="Mot de passe" name="Mdp"/><br/>
-        <select id="Choix" name="Pays">
-         <option value="France">France</option>
-         <option value="Espagne">Espagne</option>
-         <option value="Allemagne">Allemagne</option>         
-        </select>
-        <input type="checkbox" value="CG"/>
-            <label for="CG">Conditions générales</label><br/>
-        
-        <input type="hidden" name="action" value="mailer">
-        <input type="submit" value="Expédier"/>
-    </form>';
-
-}
-?>
+//function form()
+//{
+//    echo ' <form method="post" action="data-processing.php" >
+//        <input type="text" placeholder="Identifiant"/><br/>
+//
+//        <input id="optSexeH" type="radio" name="sexe" value="H"/>
+//            <label for="optSexeH"> Homme </label>
+//
+//        <input id="optSexeF" type="radio" name="sexe" value="F"/>
+//            <label for="optSexeF"> Femme </label>
+//
+//        <br/>
+//        <input type="text" placeholder="e-mail" name="Email"/><br/>
+//        <input type="password" placeholder="Mot de passe" name="Mdp"/><br/>
+//        <select id="Choix" name="Pays">
+//         <option value="France">France</option>
+//         <option value="Espagne">Espagne</option>
+//         <option value="Allemagne">Allemagne</option>
+//        </select>
+//        <input type="checkbox" value="CG"/>
+//            <label for="CG">Conditions générales</label><br/>
+//
+//        <input type="hidden" name="action" value="mailer">
+//        <input type="submit" value="Expédier"/>
+//    </form>';
+//
+//}
+//?>
 
 <?php
 function end_page()

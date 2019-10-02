@@ -14,11 +14,3 @@ $rub1addr = 'page1.hmtl';
 
 <a href="<?php echo $rub1addr; ?>"><?php echo $rub1; ?></a>
 
-<?php
-    $file = 'data.txt';
-    if(!($file = fopen($file, 'r')))
-    {
-        echo 'Erreur de lecture';
-        exit();
-    }
-    ?>
